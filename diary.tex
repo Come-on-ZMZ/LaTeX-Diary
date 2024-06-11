@@ -1,0 +1,30 @@
+\documentclass{diary}
+\usepackage{xeCJK} %使用XeLatex构建
+
+\author{Author}
+\title{Title}
+
+%指定起止日期
+\BeginAt[year]{month}{day}
+\EndAt[year]{month}{day}
+
+%指定字体
+\setCJKmainfont{行楷-简}
+\setmainfont{Times New Roman}
+
+\begin{document}
+\maketitle
+
+\MoveTo[中国]{北京}
+\Day{2}{8}[\windy]%
+指定月份和日期，第三个参数为天气或心情，要用中括号[]；后面必须要有\%，且命令与日记内容之间不能有空行，否则会引入不必要的空格和空行。
+
+
+\end{document}
+% 天气指令
+% \sun \sunny \hot \windy \clouds \snow \snowy \snowyRainy 
+% \rainy \rainySunny \rainyThunder \thunderLight \hail \dust
+% \confused \sad \simpleSmile \slightlySmile \angry \crying \dizzy \rage 
+% \winkSmile \stuckOutTongue \rollingEyes \confounded \expressionless 
+% \heartEyes \laughing \nerdSmile \openMouth \smirk \worried \astonished
+
